@@ -7,6 +7,7 @@ const CustomTabBarButton = (props) => {
   const { route, children, accessibilityState, onPress } = props;
 
   if (accessibilityState.selected) {
+    
     return (
       <View style={styles.btnWrapper}>
         <View style={{ flexDirection: "row" }}>
@@ -38,7 +39,7 @@ const CustomTabBarButton = (props) => {
           activeOpacity={1}
           onPress={onPress}
           style={[styles.activeBtn]}
-          
+
         >
           <View style={styles.button}>
             <Text>{children}</Text>
