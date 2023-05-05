@@ -38,6 +38,7 @@ const CustomTabBarButton = (props) => {
           activeOpacity={1}
           onPress={onPress}
           style={[styles.activeBtn]}
+          
         >
           <View style={styles.button}>
             <Text>{children}</Text>
